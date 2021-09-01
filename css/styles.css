@@ -7,6 +7,9 @@
   --second-backgroud-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
   --icon-color: #afb1b8;
+  --animation-time: 250ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-delay: 0ms;
 }
 
 body {
@@ -126,10 +129,11 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--maine-title-color);
+
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .header-item {
@@ -184,27 +188,29 @@ img {
 
 .contacts-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--maine-text-color);
-  align-items: center;
-  justify-content: center;
+
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .contacts-icon {
   margin-right: 10px;
   fill: var(--maine-text-color);
+
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .contacts-icon {
@@ -277,10 +283,11 @@ img {
   color: var(--primary-white-color);
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .hero-button:hover,
@@ -466,10 +473,11 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--primary-white-color);
+
   transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .team-svg {
@@ -514,10 +522,11 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
   transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .clients-icon {
@@ -579,10 +588,11 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--address-color);
+
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
@@ -662,7 +672,13 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   background-color: #f5f4fa;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
+
 .filters-button:hover,
 .filters-button:focus {
   color: var(--primary-white-color);
@@ -726,9 +742,9 @@ img {
 
   transform: translatey(100%);
   transition: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 
   display: flex;
   align-items: center;
