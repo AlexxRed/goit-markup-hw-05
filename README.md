@@ -85,3 +85,22 @@ function toggleModal() {
 refs.modal.classList.toggle('is-hidden');
 }
 })();
+
+/_ animation-name: animate-modal;
+animation-duration: 250ms;
+animation-timing-function: var(--animation-timing-function);
+animation-delay: var(--animation-delay); _/
+/\* @keyframes animate-modal {
+0% {
+transform: scale(0.5);
+}
+
+    50% {
+      transform: scale(1.25);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+
+} \*/
