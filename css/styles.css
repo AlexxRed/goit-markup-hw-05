@@ -700,14 +700,14 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  animation-name: animate-modal;
+  /* animation-name: animate-modal;
   animation-duration: 250ms;
   animation-timing-function: var(--animation-timing-function);
   animation-delay: var(--animation-delay);
-  animation-iteration-count: 3;
+  animation-iteration-count: 3; */
 }
 
-@keyframes animate-modal {
+/* @keyframes animate-modal {
   0% {
     transform: scale(0.3);
   }
@@ -719,7 +719,7 @@ img {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .modal-button {
   position: absolute;
