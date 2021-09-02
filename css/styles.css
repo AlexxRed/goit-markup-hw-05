@@ -705,6 +705,23 @@ img {
   cursor: pointer;
 }
 
+.modal-icon {
+  transition-property: fill;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--accent-color);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--accent-color);
+}
+
 /*------------------PORTFOLIO--------------- */
 
 /*------filters------ */
