@@ -474,7 +474,14 @@ img {
   border-radius: 50%;
   background-color: var(--primary-white-color);
 
-  transition-property: fill, background-color;
+  transition-property: fill;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
+}
+
+.social-icon {
+  transition-property: fill;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
   transition-delay: var(--animation-delay);
@@ -531,6 +538,11 @@ img {
 
 .clients-icon {
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
 }
 
 .clients-link:hover,
@@ -639,6 +651,18 @@ img {
 }
 
 .footer-svg {
+  fill: var(--primary-white-color);
+
+  transition-property: fill;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+  transition-delay: var(--animation-delay);
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:hover .footer-svg,
+.social-link:focus .footer-svg {
   fill: var(--primary-white-color);
 }
 
