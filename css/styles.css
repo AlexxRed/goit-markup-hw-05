@@ -474,7 +474,7 @@ img {
   border-radius: 50%;
   background-color: var(--primary-white-color);
 
-  transition-property: fill;
+  transition-property: background-color;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
   transition-delay: var(--animation-delay);
@@ -492,11 +492,16 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* .social-link:hover,
+.social-link:focus, */
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--primary-white-color);
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
 }
 
 /*------our clients------ */
@@ -530,7 +535,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition-property: fill, border-color;
+  transition-property: border-color;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
   transition-delay: var(--animation-delay);
